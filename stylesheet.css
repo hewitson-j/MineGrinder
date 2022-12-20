@@ -1,10 +1,17 @@
 body {
+    -webkit-animation: fadein 1.5s;
+    animation: fadein 1.5s;
+    background-color: black;
     margin: 1rem;
     padding: 1rem;
-    background-color: black;
     color: white;
     font-family:'Patua One', cursive;
     ;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 #main-header {
@@ -12,18 +19,29 @@ body {
 }
 
 #navbar {
-    background-color: #000b82;
+    background: linear-gradient(to right, black, #63380c, black);
     overflow: hidden;
 }
 
 #navbar a {
+    /* background-color: linear-gradient(#63380c, black); */
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family:'Patua One', cursive;
+}
+
+#navbar a:hover {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 ul {
