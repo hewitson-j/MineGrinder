@@ -26,11 +26,10 @@ function jumpscare() {
     homeButton.style.color = "black";
   }, 6000);
   setInterval(() => {
-    buyButton.style.color = "black";
-    aboutButton.textContent = "die.";
+    aboutButton.style.color = "black";
   }, 7000);
   setInterval(() => {
-    aboutButton.style.color = "black";
+    buyButton.style.color = "black";
   }, 8000);
   setInterval(() => {
     location.reload();
