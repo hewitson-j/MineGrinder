@@ -6,7 +6,6 @@ body {
     padding: 1rem;
     color: white;
     font-family:'Patua One', cursive;
-    ;
 }
 
 @keyframes fadein {
@@ -24,7 +23,6 @@ body {
 }
 
 #navbar a {
-    /* background-color: linear-gradient(#63380c, black); */
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -54,4 +52,28 @@ ul {
 
 li {
     display: inline-block;
+}
+
+#test {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	animation: flash linear 2s infinite;
+}
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+.headers {
+    text-align: center;
+}
+
+.paragraphs {
+    text-align: justify;
+    margin: 5rem;
+    margin-top: 2rem;
 }
