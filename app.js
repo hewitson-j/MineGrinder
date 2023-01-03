@@ -35,6 +35,8 @@ function jumpscare() {
   setInterval(() => {
     location.reload();
   }, 10000);
+
+  console.log("What does 'die' mean?");
 }
 
 setInterval(jumpscare, 10000);
