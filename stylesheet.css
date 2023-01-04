@@ -74,6 +74,7 @@ li {
 
 .paragraphs {
     text-align: justify;
-    margin: 5rem;
+    margin: auto;
+    max-width: 880px;
     margin-top: 2rem;
 }
