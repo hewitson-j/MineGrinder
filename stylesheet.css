@@ -128,7 +128,7 @@ li {
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-
+    max-width: fit-content;
 }
 
 .dual-image figure {
@@ -146,4 +146,8 @@ figcaption {
 
 hr {
     max-width: 50%;
+}
+
+#art {
+    overflow-x: auto;
 }
