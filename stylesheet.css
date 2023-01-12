@@ -13,8 +13,29 @@ body {
     to {opacity: 1;}
 }
 
+#animation-pause {
+    position: absolute;
+    font-size: 15pt;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+input[type='button']{
+    border-radius: 5px;
+    font-size: 10pt;
+    padding: .5rem;
+}
+
+input[type='button']:hover {
+    color: gray;
+}
+
+
 #main-header {
     text-align: center;
+    font-size: 28pt;
 }
 
 #navbar {
@@ -58,7 +79,8 @@ li {
     display: none;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
+    height: 35%;
 	animation: flash linear 2s infinite;
 }
 
@@ -70,11 +92,50 @@ li {
 
 .headers {
     text-align: center;
+    font-size: 24pt;
 }
 
 .paragraphs {
     text-align: justify;
     margin: auto;
-    max-width: 880px;
+    max-width: 1200px;
     margin-top: 2rem;
+    font-size: 18pt;
+}
+
+#author-image {
+    width: 30%;
+    height: 30%;
+    padding-left: 10%;
+    padding-right: 0%;
+    padding-top: 2rem;
+    float: left;
+}
+
+#author-content {
+    display: inline-flex;
+}
+
+#about-author-p {
+    float: right;
+    display: block;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.dual-image {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.dual-image figure {
+    padding-left: 3%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 18pt;
 }
