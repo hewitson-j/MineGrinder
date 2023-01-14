@@ -149,5 +149,5 @@ hr {
 }
 
 #art {
-    overflow-x:scroll;
+    overflow-x:visible;
 }
