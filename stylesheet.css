@@ -36,9 +36,13 @@ body {
 }
 
 input[type='button']{
+    background: linear-gradient(to right, black, #63380c, black);
+    color: white;
     border-radius: 5px;
     font-size: 10pt;
     padding: .5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 input[type='button']:hover {
