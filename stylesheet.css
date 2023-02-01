@@ -186,3 +186,10 @@ hr {
     max-width: 50%;
 }
 
+.policies {
+    color: gray;
+}
+
+.policies:visited {
+    color: maroon;
+}
