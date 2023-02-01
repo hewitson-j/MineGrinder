@@ -14,14 +14,20 @@ body {
     to {opacity: 1;}
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     #author-image {
         width: 100%;
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    #animation-pause {
+        position: relative;
+    }
+  }
+
 #animation-pause {
-    position: absolute;
+    /* position: absolute; */
     font-size: 15pt;
     padding-left: 2rem;
     padding-top: 2rem;
@@ -111,21 +117,26 @@ li {
 }
 
 #author-image {
-    width: 30%;
-    height: 30%;
-    padding-left: 10%;
+    display: block;
+    width: 15%;
+    height: 45%;
+    margin: auto;
+    justify-content: center;
+    float: inline-start;
+    /* padding-left: 10%;
     padding-right: 0%;
     padding-top: 2rem;
-    float: left;
+    float: left; */
 }
 
 #author-content {
-    display: inline-flex;
+    display: flex;
 }
 
 #about-author-p {
     float: right;
     display: block;
+    max-width: 1200px;
     padding-left: 5%;
     padding-right: 10%;
 }
