@@ -6,11 +6,18 @@ body {
     padding: 1rem;
     color: white;
     font-family:'Patua One', cursive;
+    overflow-x: hidden;
 }
 
 @keyframes fadein {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media screen and (max-width: 500px) {
+    #author-image {
+        width: 100%;
+    }
 }
 
 #animation-pause {
@@ -123,22 +130,38 @@ li {
     padding-right: 10%;
 }
 
-.dual-image {
+#art .row {
+    /* margin: auto; */
+    padding: 2rem;
+}
+
+.fig-and-cap{
+    text-align: center;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 45%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    img {
+      width: 100%;
+    }
+  }
+
+/* .dual-image {
     display: inline-flex;
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
     max-width: fit-content;
-}
-
-.dual-image figure {
-    padding-left: 3%;
-}
-
-figcaption {
-    text-align: center;
-    font-size: 18pt;
-}
+} */
 
 #copyright-and-legal {
     text-align: center;
@@ -148,6 +171,3 @@ hr {
     max-width: 50%;
 }
 
-/* #art {
-    overflow-x: hidden;
-} */
